@@ -1,0 +1,17 @@
+@import "src/utils/variables";
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 48px;
+    color: $color-manatee;
+    background-color: $color-black;
+    border-bottom: 2px solid $color-manatee;
+    border-right: 2px solid $color-manatee;
+    border-left: 2px solid $color-manatee;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
