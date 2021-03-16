@@ -2,10 +2,11 @@
 
 .detector {
   &__container {
-    width: 100%;
-    height: 100%;
+    margin: 8px;
+    min-height: 600px;
     border: 2px solid $color-manatee;
     border-radius: 8px;
     display: flex;
+    background-color: $color-black;
   }
 }
