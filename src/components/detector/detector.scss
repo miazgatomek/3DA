@@ -3,7 +3,8 @@
 .detector {
   &__container {
     margin: 8px;
-    min-height: 600px;
+    max-height: 700px;
+    height: 100%;
     border: 2px solid $color-manatee;
     border-radius: 8px;
     display: flex;

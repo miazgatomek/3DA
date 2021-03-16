@@ -13,13 +13,15 @@ const Box = () => {
     );
 }
 
+
 const Detector = () => {
     return (
         <React.Fragment>
             <div className="detector__container">
                 <Canvas>
                     <OrbitControls/>
-                    <ambientLight/>
+                    <ambientLight intensity={0.1}/>
+                    <spotLight position={[100, 100, 100]} angle={0.15} penumbra={1}/>
                     <primitive object={new THREE.AxesHelper(10)} />
                     <Box/>
                 </Canvas>
