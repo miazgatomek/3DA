@@ -17,7 +17,16 @@ export class Donut extends Component {
         return (
             <React.Fragment>
                 <mesh>
-                    {this.boxProps.map((prop, i) => <Box {...prop} key={i}/>)}
+                    {this.boxProps.map((prop, i) =>
+                        <Box
+                            {...prop}
+                            key={i}
+                            color={this.props.color}
+                            width={this.props.width}
+                            height={this.props.height}
+                            length={this.props.length}
+                        />)
+                    }
                 </mesh>
             </React.Fragment>
         )

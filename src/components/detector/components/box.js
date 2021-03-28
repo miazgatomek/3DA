@@ -1,5 +1,4 @@
 import React, {Component, createRef} from "react";
-import {INNER_BOX_LENGTH, INNER_BOX_WIDTH} from "../detector";
 
 
 export class Box extends Component {
@@ -15,8 +14,8 @@ export class Box extends Component {
     render() {
         return (
             <mesh ref={this.meshRef} position={[this.props.x, this.props.y, this.props.z]}>
-                <boxBufferGeometry args={[INNER_BOX_LENGTH, INNER_BOX_WIDTH, INNER_BOX_WIDTH]}/>
-                <meshLambertMaterial attach="material" color="lightgreen" transparent={true} opacity={0.5}/>
+                <boxBufferGeometry args={[this.props.length, this.props.width, this.props.height]}/>
+                <meshLambertMaterial attach="material" color={this.props.color} transparent={true} opacity={0.5}/>
             </mesh>
         );
     }
