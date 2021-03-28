@@ -5,8 +5,8 @@ import Detector from "./components/detector/detector";
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-        <Detector></Detector>
+      <Header/>
+      <Detector/>
     </div>
   );
 }
