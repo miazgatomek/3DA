@@ -13,14 +13,14 @@ export const INNER_BOX_HEIGHT = 1.5;
 export const INNER_BOX_LENGTH = 8;
 
 export const MIDDLE_DONUT_COLOR = '#949494'
-export const MIDDLE_DONUT_RADIUS = 3.1;
+export const MIDDLE_DONUT_RADIUS = 3.2;
 export const MIDDLE_BOX_WIDTH = 0.95;
 export const MIDDLE_BOX_HEIGHT = 0.55;
 export const MIDDLE_BOX_LENGTH = 8;
 
 export const OUTER_DONUT_COLOR = '#EE2400'
-export const OUTER_DONUT_RADIUS = 4;
-export const OUTER_BOX_WIDTH = 1.43;
+export const OUTER_DONUT_RADIUS = 3.6;
+export const OUTER_BOX_WIDTH = 1.29;
 export const OUTER_BOX_HEIGHT = 0.1;
 export const OUTER_BOX_LENGTH = 8;
 
