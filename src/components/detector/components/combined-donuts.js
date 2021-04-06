@@ -24,7 +24,7 @@ export const OUTER_BOX_LENGTH = 8;
 
 const CombinedDonuts = () => {
     const mesh = useRef();
-    useFrame(() => mesh.current.rotation.y += 0.01);
+    // useFrame(() => mesh.current.rotation.y += 0.01);
 
     return (
         <mesh ref={mesh}>
