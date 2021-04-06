@@ -1,36 +1,40 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import event from '../../../utils/events/event35_run226466.json';
 import {useFrame} from "react-three-fiber";
 import {Track} from "./track";
+import useDynamicRefs from 'use-dynamic-refs';
 
 
 const TrackEvent = () => {
-    const mesh = useRef();
+    const [getRef, setRef] = useDynamicRefs();
 
     const tracksData = event.fTracks;
     const tracksIds = Array.from(Array(tracksData.length).keys()).map(element => element.toString());
 
-
-    const x = event.fTracks[0].fPolyX;
-    const y = event.fTracks[0].fPolyY;
-    const z = event.fTracks[0].fPolyZ;
-
-    let i = 0;
+    let position = 0;
 
     useFrame(() => {
-        if (i < x.length) {
-            mesh.current.position.set(x[i] / 20, y[i] / 20, z[i] / 20);
-            i++;
+        if (position < tracksData[0].fPolyX.length) {
+            tracksIds.forEach((id, i) => {
+               const ref = getRef(id);
+               ref.current.position.set(
+                   tracksData[i].fPolyX[position] / 20,
+                   tracksData[i].fPolyY[position] / 20,
+                   tracksData[i].fPolyZ[position] / 20,
+               );
+            });
+
+            position++;
         }
     });
 
     return (
         <React.Fragment>
-            {/*{this.tracks.map()}*/}
-
-            <mesh ref={mesh}>
-                <Track/>
-            </mesh>
+            {tracksIds.map((id, i) => (
+                <mesh ref={setRef(id)} key={i}>
+                    <Track/>
+                </mesh>
+            ))}
         </React.Fragment>
     )
 }
