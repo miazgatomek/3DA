@@ -18,13 +18,15 @@ const TrackEvent = () => {
             tracksIds.forEach((id, i) => {
                const ref = getRef(id);
                ref.current.position.set(
-                   tracksData[i].fPolyX[position] / 20,
-                   tracksData[i].fPolyY[position] / 20,
-                   tracksData[i].fPolyZ[position] / 20,
+                   tracksData[i].fPolyX[position] / 40,
+                   tracksData[i].fPolyY[position] / 40,
+                   tracksData[i].fPolyZ[position] / 40,
                );
             });
 
             position++;
+        } else if (position === tracksData[0].fPolyX.length) {
+            position = 0;
         }
     });
 
