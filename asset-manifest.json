@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Alice-CERN/static/css/main.85218c9c.chunk.css",
-    "main.js": "/Alice-CERN/static/js/main.08635551.chunk.js",
-    "main.js.map": "/Alice-CERN/static/js/main.08635551.chunk.js.map",
-    "runtime-main.js": "/Alice-CERN/static/js/runtime-main.78b8d9ba.js",
-    "runtime-main.js.map": "/Alice-CERN/static/js/runtime-main.78b8d9ba.js.map",
-    "static/js/2.151a3b17.chunk.js": "/Alice-CERN/static/js/2.151a3b17.chunk.js",
-    "static/js/2.151a3b17.chunk.js.map": "/Alice-CERN/static/js/2.151a3b17.chunk.js.map",
-    "static/js/3.fb0f3232.chunk.js": "/Alice-CERN/static/js/3.fb0f3232.chunk.js",
-    "static/js/3.fb0f3232.chunk.js.map": "/Alice-CERN/static/js/3.fb0f3232.chunk.js.map",
+    "main.css": "/Alice-CERN/static/css/main.7cac5786.chunk.css",
+    "main.js": "/Alice-CERN/static/js/main.d975e27c.chunk.js",
+    "main.js.map": "/Alice-CERN/static/js/main.d975e27c.chunk.js.map",
+    "runtime-main.js": "/Alice-CERN/static/js/runtime-main.4cde7a0b.js",
+    "runtime-main.js.map": "/Alice-CERN/static/js/runtime-main.4cde7a0b.js.map",
+    "static/js/2.21ceae2a.chunk.js": "/Alice-CERN/static/js/2.21ceae2a.chunk.js",
+    "static/js/2.21ceae2a.chunk.js.map": "/Alice-CERN/static/js/2.21ceae2a.chunk.js.map",
+    "static/js/3.d98060d2.chunk.js": "/Alice-CERN/static/js/3.d98060d2.chunk.js",
+    "static/js/3.d98060d2.chunk.js.map": "/Alice-CERN/static/js/3.d98060d2.chunk.js.map",
     "index.html": "/Alice-CERN/index.html",
-    "static/css/main.85218c9c.chunk.css.map": "/Alice-CERN/static/css/main.85218c9c.chunk.css.map",
-    "static/js/2.151a3b17.chunk.js.LICENSE.txt": "/Alice-CERN/static/js/2.151a3b17.chunk.js.LICENSE.txt"
+    "static/css/main.7cac5786.chunk.css.map": "/Alice-CERN/static/css/main.7cac5786.chunk.css.map",
+    "static/js/2.21ceae2a.chunk.js.LICENSE.txt": "/Alice-CERN/static/js/2.21ceae2a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.78b8d9ba.js",
-    "static/js/2.151a3b17.chunk.js",
-    "static/css/main.85218c9c.chunk.css",
-    "static/js/main.08635551.chunk.js"
+    "static/js/runtime-main.4cde7a0b.js",
+    "static/js/2.21ceae2a.chunk.js",
+    "static/css/main.7cac5786.chunk.css",
+    "static/js/main.d975e27c.chunk.js"
   ]
 }
