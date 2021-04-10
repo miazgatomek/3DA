@@ -2,43 +2,44 @@
 
 .detector {
   &__container {
-    margin: 8px;
-    max-height: 700px;
-    height: 100%;
-    border: 2px solid $color-manatee;
+    background-color: $color-black;
     border-radius: 8px;
+    border: 2px solid $color-manatee;
     display: flex;
     flex-direction: column;
-    background-color: $color-black;
+    height: 100%;
+    margin: 8px;
+    max-height: 700px;
   }
 
   &__buttons-row {
-    padding: 4px;
-    margin-bottom: 4px;
+    align-items: baseline;
     display: flex;
     flex-direction: row;
+    margin-bottom: 4px;
+    padding: 4px;
   }
 
   &__button {
+    background-color: $color-light-black;
     border-radius: 8px;
-    border-style: solid;
-
-    &__previous {
-      background-color: $color-light-black;
-      border-color: $color-light-black;
-    }
-
-    &__next {
-      background-color: $color-manatee;
-      border-color: $color-manatee;
-      margin-left: 4px;
-    }
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    margin: 4px;
+    padding: 8px;
   }
 
   &__event-index {
-    background-color: $color-blue;
-    padding: 4px;
+    align-items: center;
+    background-color: $color-light-black;
     border-radius: 8px;
-    border-style: solid;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    margin-left: 4px;
+    text-align: center;
+    width: 52px;
   }
 }

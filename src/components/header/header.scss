@@ -2,16 +2,16 @@
 
 .header {
   &__container {
+    align-items: center;
+    background-color: $color-light-black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 2px solid $color-manatee;
+    border-left: 2px solid $color-manatee;
+    border-right: 2px solid $color-manatee;
+    color: $color-manatee;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     min-height: 48px;
-    color: $color-manatee;
-    background-color: $color-light-black;
-    border-bottom: 2px solid $color-manatee;
-    border-right: 2px solid $color-manatee;
-    border-left: 2px solid $color-manatee;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
   }
 }

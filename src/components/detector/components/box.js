@@ -2,8 +2,8 @@ import React, {Component, createRef} from "react";
 
 
 export class Box extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.meshRef = createRef();
     }
 
