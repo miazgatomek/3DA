@@ -11,7 +11,7 @@ export class Track extends Component {
             <React.Fragment>
                 <mesh>
                     <sphereBufferGeometry args={[0.1, 10, 10]}/>
-                    <meshLambertMaterial attach="material" color="red"/>
+                    <meshLambertMaterial attach="material" color="yellow"/>
                 </mesh>
             </React.Fragment>
         )
