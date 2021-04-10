@@ -8,6 +8,37 @@
     border: 2px solid $color-manatee;
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     background-color: $color-black;
+  }
+
+  &__buttons-row {
+    padding: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__button {
+    border-radius: 8px;
+    border-style: solid;
+
+    &__previous {
+      background-color: $color-light-black;
+      border-color: $color-light-black;
+    }
+
+    &__next {
+      background-color: $color-manatee;
+      border-color: $color-manatee;
+      margin-left: 4px;
+    }
+  }
+
+  &__event-index {
+    background-color: $color-blue;
+    padding: 4px;
+    border-radius: 8px;
+    border-style: solid;
   }
 }
