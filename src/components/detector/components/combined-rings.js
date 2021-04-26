@@ -1,5 +1,5 @@
 import {Ring} from "./ring";
-import React, {useRef} from "react";
+import React from "react";
 
 
 export const INNER_RING_COLOR = '#4DED30'
@@ -22,10 +22,8 @@ export const OUTER_BOX_LENGTH = 8;
 
 
 const CombinedRings = () => {
-    const mesh = useRef();
-
     return (
-        <mesh ref={mesh}>
+        <mesh>
             <Ring
                 color={INNER_RING_COLOR}
                 radius={INNER_RING_RADIUS}
