@@ -3,7 +3,7 @@ import './detector.scss'
 import {Canvas} from "react-three-fiber";
 import {OrbitControls} from "@react-three/drei";
 import * as THREE from "three";
-import CombinedDonuts from "./components/combined-donuts";
+import CombinedRings from "./components/combined-rings";
 import TrackEvent from "./components/track-event";
 
 const NUM_OF_EVENTS = 12;
@@ -44,7 +44,7 @@ const Detector = () => {
                     <ambientLight intensity={0.1}/>
                     <spotLight position={[100, 100, 100]} angle={0.15} penumbra={1}/>
                     <primitive object={new THREE.AxesHelper(1000)} />
-                    <CombinedDonuts/>
+                    <CombinedRings/>
                     <TrackEvent eventIndex={eventIndex}/>
                 </Canvas>
             </div>

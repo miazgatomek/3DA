@@ -37,8 +37,6 @@ const TrackEvent = (props) => {
             });
 
             position++;
-        } else if (position === tracksData[0].fPolyX.length) {
-            // position = 0;
         }
     });
 

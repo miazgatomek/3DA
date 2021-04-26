@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import {Box} from "./box";
 
 
-export class Donut extends Component {
+export class Ring extends Component {
     constructor(props) {
         super();
 
