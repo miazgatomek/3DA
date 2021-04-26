@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Alice-CERN/static/css/main.7cac5786.chunk.css",
-    "main.js": "/Alice-CERN/static/js/main.2cbb6d75.chunk.js",
-    "main.js.map": "/Alice-CERN/static/js/main.2cbb6d75.chunk.js.map",
+    "main.js": "/Alice-CERN/static/js/main.3d08f803.chunk.js",
+    "main.js.map": "/Alice-CERN/static/js/main.3d08f803.chunk.js.map",
     "runtime-main.js": "/Alice-CERN/static/js/runtime-main.4cde7a0b.js",
     "runtime-main.js.map": "/Alice-CERN/static/js/runtime-main.4cde7a0b.js.map",
     "static/js/2.4763e48a.chunk.js": "/Alice-CERN/static/js/2.4763e48a.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4cde7a0b.js",
     "static/js/2.4763e48a.chunk.js",
     "static/css/main.7cac5786.chunk.css",
-    "static/js/main.2cbb6d75.chunk.js"
+    "static/js/main.3d08f803.chunk.js"
   ]
 }
