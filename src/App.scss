@@ -4,3 +4,46 @@
   height: 100%;
   background-color: $color-blue;
 }
+
+.canvas {
+  &__container {
+    background-color: $color-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 70px);
+    margin: 8px;
+  }
+
+  &__buttons-row {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+    padding: 4px;
+  }
+
+  &__button {
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    margin: 4px;
+    padding: 8px;
+  }
+
+  &__event-index {
+    align-items: center;
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    display: flex;
+    height: 28px;
+    justify-content: center;
+    margin-left: 4px;
+    text-align: center;
+    width: 52px;
+  }
+}
