@@ -7,13 +7,38 @@
 
 .canvas {
   &__container {
+    height: calc(100% - 124px);
+  }
+
+  &__detector-container {
     background-color: $color-black;
     border-radius: 8px;
     border: 2px solid $color-manatee;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 124px);
+    height: 100%;
     margin: 0px 8px 8px 8px;
+  }
+
+  &__header-container {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    width: 100%;
+  }
+
+  &__about-text {
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    padding: 12px;
+    text-justify: inter-word;
+    white-space: pre-wrap;
+    width: 40%;
   }
 
   &__buttons-row {
