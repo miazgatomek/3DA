@@ -17,6 +17,8 @@ function App() {
     const _setEventIndex = (index) => {
         if (index >= 1 && index <= NUM_OF_EVENTS) {
             setEventIndex(index);
+        } else {
+            setEventIndex(index === NUM_OF_EVENTS + 1 ? 1 : NUM_OF_EVENTS);
         }
     };
 
