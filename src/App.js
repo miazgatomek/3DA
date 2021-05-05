@@ -5,6 +5,7 @@ import {Canvas} from "react-three-fiber";
 import {OrbitControls} from "@react-three/drei";
 import * as THREE from "three";
 import TrackEvent from "./components/track-event/track-event";
+import LineEvent from "./components/line-event/line-event";
 import React, {useState} from "react";
 
 
@@ -19,12 +20,17 @@ function App() {
         }
     };
 
+    const [showPoints, setShowPoints] = useState(true);
+    const _setShowPoints = () => {
+        setShowPoints(!showPoints);
+    }
+
   return (
     <div className="App">
         <Header/>
 
-        <div className="canvas__container">
-            <div className="canvas__buttons-row">
+        <div className="canvas__buttons-row">
+            <div className="canvas__button-group">
                 <button
                     className="canvas__button"
                     onClick={() => _setEventIndex(eventIndex - 1)}
@@ -44,12 +50,28 @@ function App() {
                 </div>
             </div>
 
+            <div className="canvas__button-group">
+                <div className="canvas__event-index">
+                    <span>{showPoints ? 'Points' : 'Lines'}</span>
+                </div>
+
+                <button
+                    className="canvas__button"
+                    onClick={() => _setShowPoints()}
+                >
+                    Switch between lines/points
+                </button>
+            </div>
+        </div>
+
+        <div className="canvas__container">
             <Canvas camera={{position: [10, 6, 10]}}>
                 <OrbitControls/>
                 <ambientLight intensity={0.1}/>
                 <spotLight position={[100, 100, 100]} angle={0.15} penumbra={1}/>
-                <primitive object={new THREE.AxesHelper(1000)} />
-                <TrackEvent eventIndex={eventIndex}/>
+                {/*<primitive object={new THREE.AxesHelper(1000)} />*/}
+                {showPoints && <TrackEvent eventIndex={eventIndex}/>}
+                {!showPoints && <LineEvent eventIndex={eventIndex}/>}
                 <Detector/>
             </Canvas>
         </div>

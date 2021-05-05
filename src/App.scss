@@ -12,13 +12,21 @@
     border: 2px solid $color-manatee;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 70px);
-    margin: 8px;
+    height: calc(100% - 124px);
+    margin: 0px 8px 8px 8px;
   }
 
   &__buttons-row {
-    align-items: baseline;
+    width: 100%;
+    margin-top: 8px;
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: baseline;
     flex-direction: row;
     margin-bottom: 4px;
     padding: 4px;
