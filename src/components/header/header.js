@@ -7,8 +7,9 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <div className="header__container">
-                    <span>Detector</span>
-                    <span>About</span>
+                    <h2 className="header__title">ALICE</h2>
+                    <span className="header__element">Detector</span>
+                    <span className="header__element">About</span>
                 </div>
             </React.Fragment>
         );

@@ -60,7 +60,7 @@ const LineEvent = (props) => {
                             points={points[i]}
                             key={i}
                             color={'yellow'}
-                            lineWidth={0.3}
+                            lineWidth={0.5}
                         />
                     ))
                 }
