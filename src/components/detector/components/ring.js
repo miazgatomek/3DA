@@ -10,7 +10,12 @@ export class Ring extends Component {
         const getY = (i) => Math.sin(degreesToRadians(i * 20)) * props.radius;
         const getZ = (i) => Math.cos(degreesToRadians(i * 20)) * props.radius;
 
-        this.boxProps = Array.from(Array(19), (_, i) => ({x: 0, y: getY(i), z: getZ(i), rotation: degreesToRadians(360 - i * 20)}));
+        this.boxProps = Array.from(Array(19), (_, i) => ({
+            x: 0,
+            y: getY(i),
+            z: getZ(i),
+            rotation: degreesToRadians(360 - i * 20)
+        }));
     }
 
     render() {
