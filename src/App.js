@@ -23,9 +23,9 @@ function App() {
         }
     };
 
-    const [showPoints, setShowPoints] = useState(true);
-    const _setShowPoints = () => {
-        setShowPoints(!showPoints);
+    const [showTracks, setShowTracks] = useState(true);
+    const _setShowTracks = () => {
+        setShowTracks(!showTracks);
     }
 
     const [currentScreen, setCurrentScreen] = useState('detector');
@@ -79,12 +79,12 @@ function App() {
 
                 <div className="canvas__button-group">
                     <div className="canvas__event-index">
-                        <span>{showPoints ? 'Tracks' : 'Lines'}</span>
+                        <span>{showTracks ? 'Tracks' : 'Lines'}</span>
                     </div>
 
                     <button
                         className="canvas__button"
-                        onClick={() => _setShowPoints()}
+                        onClick={() => _setShowTracks()}
                     >
                         Switch between lines/tracks
                     </button>
@@ -96,8 +96,8 @@ function App() {
                     <ambientLight intensity={0.1}/>
                     <spotLight position={[100, 100, 100]} angle={0.15} penumbra={1}/>
                     {/*<primitive object={new THREE.AxesHelper(1000)} />*/}
-                    {showPoints && <TrackEvent eventIndex={eventIndex}/>}
-                    {!showPoints && <LineEvent eventIndex={eventIndex}/>}
+                    {showTracks && <TrackEvent eventIndex={eventIndex}/>}
+                    {!showTracks && <LineEvent eventIndex={eventIndex}/>}
                     <Detector/>
                 </Canvas>
             </div>
