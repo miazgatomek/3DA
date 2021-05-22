@@ -79,14 +79,14 @@ function App() {
 
                 <div className="canvas__button-group">
                     <div className="canvas__event-index">
-                        <span>{showPoints ? 'Points' : 'Lines'}</span>
+                        <span>{showPoints ? 'Tracks' : 'Lines'}</span>
                     </div>
 
                     <button
                         className="canvas__button"
                         onClick={() => _setShowPoints()}
                     >
-                        Switch between lines/points
+                        Switch between lines/tracks
                     </button>
                 </div>
             </div>
