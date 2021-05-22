@@ -45,6 +45,7 @@
   &__buttons-row {
     align-items: baseline;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 8px;
     width: 100%;
