@@ -8,7 +8,10 @@ export function Layout() {
     return (
         <div className="layout">
             <Header/>
-            <Outlet/>
+
+            <div className="layout__outlet-container">
+                <Outlet/>
+            </div>
         </div>
     );
 }

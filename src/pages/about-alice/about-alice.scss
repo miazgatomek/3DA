@@ -1,0 +1,21 @@
+
+@import "src/utils/variables";
+
+.about-alice {
+    
+}
+
+&__about-text {
+    background-color: $color-light-black;
+    border-radius: 8px;
+    border: 2px solid $color-manatee;
+    color: $color-manatee;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: normal;
+    padding: 12px;
+    text-justify: inter-word;
+    white-space: pre-wrap;
+    width: 75%;
+    max-width: 520px;
+  }

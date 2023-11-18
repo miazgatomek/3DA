@@ -4,6 +4,7 @@ import LineEvent from "components/line-event/line-event";
 import TrackEvent from "components/track-event/track-event";
 import React, { useState } from "react";
 import { Canvas } from "react-three-fiber";
+import './three-js.scss'
 
 const NUM_OF_EVENTS = 12;
 

@@ -13,7 +13,7 @@ export function Header() {
             <Link
                 to="about"
                 className="header__element"
-            >About</Link>
+            >About ALICE</Link>
         </div>
     )
 }
