@@ -1,8 +1,14 @@
 {
   "homepage": "https://miazgatomek.github.io/Alice-CERN/",
   "name": "alice",
-  "version": "0.1.0",
+  "license": "MIT",
+  "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "^14.15.0",
+    "npm": "^6.14.0",
+    "yarn": "^1.22.0"
+  },
   "dependencies": {
     "@react-three/drei": "^3.11.0",
     "@testing-library/jest-dom": "^5.11.4",
