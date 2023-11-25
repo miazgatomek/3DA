@@ -11,7 +11,7 @@ export function Header() {
                 ThreeJS
             </Link>
             <Link
-                to="about"
+                to="about-alice"
                 className="header__element"
             >About ALICE</Link>
         </div>

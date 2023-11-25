@@ -1,14 +1,14 @@
 import { OrbitControls } from "@react-three/drei";
-import Detector from "components/detector/detector";
-import LineEvent from "components/line-event/line-event";
-import TrackEvent from "components/track-event/track-event";
+import Detector from "components/three-js/components/detector/detector";
+import LineEvent from "components/three-js/components/line-event/line-event";
+import TrackEvent from "components/three-js/components/track-event/track-event";
 import React, { useState } from "react";
 import { Canvas } from "react-three-fiber";
 import './three-js.scss'
 
 const NUM_OF_EVENTS = 12;
 
-export function ThreeJS() {
+export default function ThreeJS() {
     const [eventIndex, setEventIndex] = useState(1);
     const _setEventIndex = (index) => {
         if (index >= 1 && index <= NUM_OF_EVENTS) {
