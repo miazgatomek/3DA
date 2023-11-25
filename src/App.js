@@ -1,23 +1,25 @@
 import './App.scss';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
-import { AboutAlice } from 'pages/about-alice/about-alice';
-import { Layout } from 'components/layout/layout';
-import { ThreeJS } from 'pages/three-js/three-js';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { Suspense } from "react";
+import { AboutAlicePage } from 'pages/about-alice';
+import { ThreeJSPage } from 'pages/three-js';
+import Loader from 'core/components/loader/loader';
+const Layout = React.lazy(() => import("core/components/layout/layout"));
 
 
 function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<div>test</div>} />
-                    <Route path="about" element={<AboutAlice />} />
-                    <Route path="three-js" element={<ThreeJS />} />
-                    <Route path="*" element={<div>test-no-page</div>} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <Suspense fallback={<Loader />}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route path="about-alice" element={<AboutAlicePage />} />
+                        <Route path="three-js" element={<ThreeJSPage />} />
+                    </Route>
+                    <Route index element={<Navigate to="three-js" />} />
+                </Routes>
+            </BrowserRouter>
+        </Suspense>
     )
 }
 

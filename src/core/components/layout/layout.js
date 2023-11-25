@@ -4,7 +4,7 @@ import React from "react";
 import './layout.scss'
 
 
-export function Layout() {
+export default function Layout() {
     return (
         <div className="layout">
             <Header/>
