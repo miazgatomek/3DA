@@ -9,7 +9,6 @@
     border-bottom: 2px solid $color-manatee;
     border-left: 2px solid $color-manatee;
     border-right: 2px solid $color-manatee;
-    color: $color-manatee;
     display: flex;
     padding-left: 8px;
     min-height: 48px;
@@ -17,6 +16,8 @@
 
   &__element {
     margin-right: 20px;
+    color: $color-manatee;
+    text-decoration: none;
 
     &:hover {
       color: $color-white;

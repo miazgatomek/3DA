@@ -1,0 +1,13 @@
+@import "src/utils/variables";
+
+.layout {
+  background-color: $color-blue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+  &__outlet-container {
+    height: calc(100% - 50px);
+  }
+}
