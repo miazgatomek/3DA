@@ -16,7 +16,8 @@ function App() {
                         <Route path="about-alice" element={<AboutAlicePage />} />
                         <Route path="three-js" element={<ThreeJSPage />} />
                     </Route>
-                    <Route index element={<Navigate to="three-js" />} />
+                    <Route index element={<Navigate to="three-js" replace/>} />
+                    <Route path="*" element={<Navigate to="three-js" replace/>} />
                 </Routes>
             </BrowserRouter>
         </Suspense>
