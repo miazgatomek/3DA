@@ -6,7 +6,7 @@ import React, { Suspense } from "react";
 import './three-js.scss'
 
 const Model = () => {
-    const gltf = useLoader(GLTFLoader, "Alice-CERN/models/Poimandres.gltf");
+    const gltf = useLoader(GLTFLoader, "models/Poimandres.gltf");
     console.log(gltf)
     return (
       <>
