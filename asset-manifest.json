@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Alice-CERN/static/css/main.8ae262d0.css",
-    "main.js": "/Alice-CERN/static/js/main.20841cf8.js",
-    "static/css/811.069cec32.chunk.css": "/Alice-CERN/static/css/811.069cec32.chunk.css",
-    "static/js/811.3e488032.chunk.js": "/Alice-CERN/static/js/811.3e488032.chunk.js",
-    "static/css/594.74a3029d.chunk.css": "/Alice-CERN/static/css/594.74a3029d.chunk.css",
-    "static/js/594.6e3ddee4.chunk.js": "/Alice-CERN/static/js/594.6e3ddee4.chunk.js",
-    "static/css/54.226ef3d5.chunk.css": "/Alice-CERN/static/css/54.226ef3d5.chunk.css",
-    "static/js/54.977aa9f5.chunk.js": "/Alice-CERN/static/js/54.977aa9f5.chunk.js",
-    "static/js/787.4f670a2b.chunk.js": "/Alice-CERN/static/js/787.4f670a2b.chunk.js",
-    "static/js/282.ea4b5ad3.chunk.js": "/Alice-CERN/static/js/282.ea4b5ad3.chunk.js",
-    "index.html": "/Alice-CERN/index.html",
-    "main.8ae262d0.css.map": "/Alice-CERN/static/css/main.8ae262d0.css.map",
-    "main.20841cf8.js.map": "/Alice-CERN/static/js/main.20841cf8.js.map",
-    "811.069cec32.chunk.css.map": "/Alice-CERN/static/css/811.069cec32.chunk.css.map",
-    "811.3e488032.chunk.js.map": "/Alice-CERN/static/js/811.3e488032.chunk.js.map",
-    "594.74a3029d.chunk.css.map": "/Alice-CERN/static/css/594.74a3029d.chunk.css.map",
-    "594.6e3ddee4.chunk.js.map": "/Alice-CERN/static/js/594.6e3ddee4.chunk.js.map",
-    "54.226ef3d5.chunk.css.map": "/Alice-CERN/static/css/54.226ef3d5.chunk.css.map",
-    "54.977aa9f5.chunk.js.map": "/Alice-CERN/static/js/54.977aa9f5.chunk.js.map",
-    "787.4f670a2b.chunk.js.map": "/Alice-CERN/static/js/787.4f670a2b.chunk.js.map",
-    "282.ea4b5ad3.chunk.js.map": "/Alice-CERN/static/js/282.ea4b5ad3.chunk.js.map"
+    "main.css": "./static/css/main.8ae262d0.css",
+    "main.js": "./static/js/main.bcbb364d.js",
+    "static/css/811.069cec32.chunk.css": "./static/css/811.069cec32.chunk.css",
+    "static/js/811.3e488032.chunk.js": "./static/js/811.3e488032.chunk.js",
+    "static/css/594.74a3029d.chunk.css": "./static/css/594.74a3029d.chunk.css",
+    "static/js/594.6e3ddee4.chunk.js": "./static/js/594.6e3ddee4.chunk.js",
+    "static/css/54.226ef3d5.chunk.css": "./static/css/54.226ef3d5.chunk.css",
+    "static/js/54.6fc673d4.chunk.js": "./static/js/54.6fc673d4.chunk.js",
+    "static/js/787.4f670a2b.chunk.js": "./static/js/787.4f670a2b.chunk.js",
+    "static/js/282.ea4b5ad3.chunk.js": "./static/js/282.ea4b5ad3.chunk.js",
+    "index.html": "./index.html",
+    "main.8ae262d0.css.map": "./static/css/main.8ae262d0.css.map",
+    "main.bcbb364d.js.map": "./static/js/main.bcbb364d.js.map",
+    "811.069cec32.chunk.css.map": "./static/css/811.069cec32.chunk.css.map",
+    "811.3e488032.chunk.js.map": "./static/js/811.3e488032.chunk.js.map",
+    "594.74a3029d.chunk.css.map": "./static/css/594.74a3029d.chunk.css.map",
+    "594.6e3ddee4.chunk.js.map": "./static/js/594.6e3ddee4.chunk.js.map",
+    "54.226ef3d5.chunk.css.map": "./static/css/54.226ef3d5.chunk.css.map",
+    "54.6fc673d4.chunk.js.map": "./static/js/54.6fc673d4.chunk.js.map",
+    "787.4f670a2b.chunk.js.map": "./static/js/787.4f670a2b.chunk.js.map",
+    "282.ea4b5ad3.chunk.js.map": "./static/js/282.ea4b5ad3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ae262d0.css",
-    "static/js/main.20841cf8.js"
+    "static/js/main.bcbb364d.js"
   ]
 }
