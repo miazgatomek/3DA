@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three-stdlib";
 import React, { Suspense } from "react";
 import './three-js.scss'
 
