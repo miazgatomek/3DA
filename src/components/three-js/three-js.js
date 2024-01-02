@@ -7,7 +7,8 @@ import './three-js.scss'
 
 const Model = () => {
     console.time('Model Load');
-    const gltf = useLoader(GLTFLoader, "models/Poimandres.gltf");
+    //add file directly in dist
+    const gltf = useLoader(GLTFLoader, "Poimandres.gltf");
     console.log(gltf)
     console.timeEnd('Model Load');
     return (
