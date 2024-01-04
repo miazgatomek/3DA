@@ -1,11 +1,11 @@
 import Loader from "../core/components/loader/loader";
 import React, { Suspense } from "react";
-const AboutAlice = React.lazy(() => import("../components/about-alice/about-alice"));
+const About = React.lazy(() => import("../components/about/about"));
 
-export function AboutAlicePage() {
+export function AboutPage() {
     return (
         <Suspense fallback={<Loader />}>
-            <AboutAlice />
+            <About />
         </Suspense>
     );
 }
