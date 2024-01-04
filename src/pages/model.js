@@ -1,11 +1,11 @@
 import Loader from "../core/components/loader/loader";
 import React, { Suspense } from "react";
-const ThreeJS = React.lazy(() => import("../components/three-js/three-js"));
+const ModelScene = React.lazy(() => import("../components/model-scene/model-scene"));
 
-export function ThreeJSPage() {
+export function ModelPage() {
     return (
         <Suspense fallback={<Loader />}>
-            <ThreeJS />
+            <ModelScene />
         </Suspense>
     );
 }

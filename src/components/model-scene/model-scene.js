@@ -3,7 +3,7 @@ import { useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { Suspense } from "react";
-import './three-js.scss'
+import './model-scene.scss'
 
 const Model = () => {
     console.time('Model Load');
