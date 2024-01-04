@@ -1,33 +1,42 @@
-import { Canvas } from "@react-three/fiber";
-import { useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import React, { Suspense } from "react";
-import './model-scene.scss'
+import React, { useEffect, useRef } from 'react';
+import { Engine, Scene, SceneLoader } from '@babylonjs/core';
+import '@babylonjs/loaders';
+import '@babylonjs/loaders/glTF/2.0/glTFLoader';
 
-const Model = () => {
-    console.time('Model Load');
-    const gltf = useLoader(GLTFLoader, "models/Poimandres.gltf");
-    console.log(gltf)
-    console.timeEnd('Model Load');
-    return (
-      <>
-        <primitive object={gltf.scene} />
-      </>
-    );
-  };
+function BabylonScene() {
+  const canvasRef = useRef(null);
+  const modelPath = "../../../models/Poimandres.gltf"
 
-export default function ThreeJS() {
-    return (
-        <div className="canvas__container">
-            <div className="canvas__detector-container">
-                <Canvas style={{ background: "lightblue" }}>
-                    <Suspense fallback={null}>
-                        <OrbitControls/>
-                        <Model/>
-                    </Suspense>
-                </Canvas>
-            </div>
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const engine = new Engine(canvas, true);
+
+    const scene = new Scene(engine);
+    scene.createDefaultCameraOrLight(true, true, true);
+    scene.createDefaultEnvironment();
+
+    // Load the model
+    SceneLoader.Append("", modelPath, scene, (meshes) => {
+      console.log(meshes)
+    });
+
+    engine.runRenderLoop(() => {
+      scene.render();
+    });
+
+    return () => {
+      scene.dispose();
+      engine.dispose();
+    };
+  }, [modelPath]);
+
+  return (
+    <div className="canvas__container">
+        <div className="canvas__detector-container">
+            <canvas ref={canvasRef} style={{ width: '100%', height: '100%' }} />;
         </div>
-    )
+    </div>
+  )
 }
+
+export default BabylonScene;
