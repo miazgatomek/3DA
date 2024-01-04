@@ -1,8 +1,8 @@
 import './App.scss';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import React, { Suspense } from "react";
-import { AboutAlicePage } from './pages/about-alice';
-import { ThreeJSPage } from './pages/three-js';
+import { AboutPage } from './pages/about';
+import { ModelPage } from './pages/model';
 import Loader from './core/components/loader/loader';
 const Layout = React.lazy(() => import("./core/components/layout/layout"));
 
@@ -13,11 +13,11 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route path="about-alice" element={<AboutAlicePage />} />
-                        <Route path="three-js" element={<ThreeJSPage />} />
+                        <Route path="about" element={<AboutPage />} />
+                        <Route path="model" element={<ModelPage />} />
                     </Route>
-                    <Route index element={<Navigate to="three-js" replace/>} />
-                    <Route path="*" element={<Navigate to="three-js" replace/>} />
+                    <Route index element={<Navigate to="model" replace/>} />
+                    <Route path="*" element={<Navigate to="model" replace/>} />
                 </Routes>
             </BrowserRouter>
         </Suspense>
