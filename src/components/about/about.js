@@ -1,6 +1,6 @@
 import React from "react";
 import {ABOUT_TEXT} from "../../utils/about-text";
-import "./about-alice.scss"
+import "./about.scss"
 
 export default function AboutAlice() {
     return (
