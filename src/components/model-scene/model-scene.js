@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import { Engine, Scene, SceneLoader } from '@babylonjs/core';
 import '@babylonjs/loaders';
 import '@babylonjs/loaders/glTF/2.0/glTFLoader';
+import './model-scene.scss'
 
 function BabylonScene() {
   const canvasRef = useRef(null);
-  const modelPath = "../../../models/Poimandres.gltf"
+  const modelPath = "../../../models/scene.gltf"
 
   useEffect(() => {
     const canvas = canvasRef.current;
