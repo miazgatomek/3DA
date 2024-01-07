@@ -4,9 +4,11 @@ import '@babylonjs/loaders';
 import '@babylonjs/loaders/glTF/2.0/glTFLoader';
 import './model-scene.scss'
 
+//gltf files should be put in dist folder
+
 function BabylonScene() {
   const canvasRef = useRef(null);
-  const modelPath = "../../../models/scene.gltf"
+  const modelPath = "models/scene.gltf"
 
   useEffect(() => {
     const canvas = canvasRef.current;
