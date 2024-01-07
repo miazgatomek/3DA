@@ -9,7 +9,7 @@ const ModelScene = () => {
     <div className="canvas__container">
       <div className="canvas__detector-container">
         <a-scene>
-          <a-entity gltf-model="url(./models/scene.gltf)" play-all-model-animations position="0 0 10"></a-entity>
+          <a-entity gltf-model="url(./models/scene.gltf)" play-all-model-animations position="0 2 -3"></a-entity>
         </a-scene>
       </div>
     </div>
