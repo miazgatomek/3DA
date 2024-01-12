@@ -7,9 +7,7 @@ import './model-scene.scss'
 
 const Model = () => {
     console.time('Model Load');
-    //add file directly in dist
-    const gltf = useLoader(GLTFLoader, "Poimandres.gltf");
-    console.log(gltf)
+    const gltf = useLoader(GLTFLoader, "models/scene.gltf");
     console.timeEnd('Model Load');
     return (
       <>
