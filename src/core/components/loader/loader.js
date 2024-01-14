@@ -5,7 +5,7 @@ export default function Loader() {
     return (
         <div className="loader">
             <span className="loader__spinner"></span>
-            <h2 className="loader__title">ALICE</h2>
+            <h2 className="loader__title">3DA</h2>
         </div>
     )
 }
