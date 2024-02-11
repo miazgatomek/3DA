@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Engine, Scene, SceneLoader } from '@babylonjs/core';
+import { GLTFFileLoader } from '@babylonjs/loaders';
 import '@babylonjs/loaders';
 import '@babylonjs/loaders/glTF/2.0/glTFLoader';
 import './model-scene.scss'
@@ -11,6 +12,8 @@ function BabylonScene() {
   useEffect(() => {
     const canvas = canvasRef.current;
     const engine = new Engine(canvas, true);
+
+    GLTFFileLoader.IncrementalLoading = false;
 
     const scene = new Scene(engine);
     scene.createDefaultCameraOrLight(true, true, true);
